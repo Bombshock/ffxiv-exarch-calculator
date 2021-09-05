@@ -1,0 +1,24 @@
+<!-- <mat-expansion-panel (click)="click()">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            {{ itemData | itemName }}
+        </mat-panel-title>
+        <mat-panel-description>
+            {{ data.gilPerToken | number:'.1-1' }} Gil per Token
+        </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-selection-list>
+        <mat-list-option *ngFor="let listing of data.listings" (click)="listing.checked = !listing.checked" [selected]="listing.checked">
+            {{ listing.pricePerUnit }} Gil
+        </mat-list-option>
+    </mat-selection-list>
+</mat-expansion-panel> -->
+
+<div class="row" (click)="click()">
+    <div class="title">
+        {{ itemData | itemName }}
+    </div>
+    <div class="price">
+        {{ data.minPriceHQ }} | {{ data.gilPerToken | number:'.1-1' }} Gil per Token
+    </div>
+</div>

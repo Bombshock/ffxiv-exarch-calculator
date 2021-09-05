@@ -1,0 +1,23 @@
+:host {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+mat-expansion-panel {
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    height: 48px;
+
+    & > * {
+        line-height: 48px;
+    }
+
+    .title {
+        flex: 1;
+    }
+}
